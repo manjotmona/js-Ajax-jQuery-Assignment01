@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="validateForm.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form name="registrationForm" action="" onsubmit="return(ValidateForm())" method="post">
+        First name:<br>
+        <input type="text" id="fname" name="firstname" required>
+        <br>
+        <br>
+        <div id="firstNameValidation"></div>
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname">
+        <br>
+        Email:<br>
+        <input type="text" name="email" required>
+        <br>
+        <div id="emailValidation"></div>
+        <br>
+        <br>Confirm Email:<br>
+        <input type="text" name="confirmEmail" required>
+        <br>
+        <br>
+        <div id="confirmEmailValidation"></div>
+        <br>
+
+        Gender:
+        <br>
+
+
+        <ul>
+            <li>
+                <input type="radio" id="f-option" name="gender">
+                <label for="f-option">Male</label>
+
+                <div class="check"></div>
+            </li>
+
+            <li>
+                <input type="radio" id="s-option" name="gender">
+                <label for="s-option">Female</label>
+
+                <div class="check">
+                    <div class="inside"></div>
+                </div>
+            </li>
+        </ul>
+        <br>
+        <div id="genderValidation"></div>
+        <br>
+
+        <br>
+
+
+        Phone:<br>
+        <input id="id1" type="number" required>
+        <br>
+        <div id="phone"></div>
+        <br>
+        <button onclick="ValidateForm()">OK</button>
+    </form>
+</div>
+
+
+</body>
+</html>
